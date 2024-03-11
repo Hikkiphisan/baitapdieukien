@@ -156,29 +156,46 @@ Nhập chiều cao: (m) <input id="chieucao" type="text">
 <button id="nhutbam" type="button" onclick=kiemtra()> Kiểm tra</button>
 <br>
 <span id="text1"></span><span id="text2" style="font-weight: bold"></span>
+<img id="longvang" src="3b97635b6bd4a5bfc436fbd3908f05e0.gif" height="100" width="250"/>
+
 <script>
-<img id="longvang" src=<img src="3b97635b6bd4a5bfc436fbd3908f05e0.gif" height="300" width="370"/>
+    let longvan = document.getElementById("longvang");
 
-     function kiemtra() {
-         let longvan = document.getElementById("longvang").innerHTML;
-         let cannang = +document.getElementById("cannang").value;
-         let chieucao = +document.getElementById("chieucao").value;
-         let txt1 = document.getElementById("text1");
-         let txt2 = document.getElementById("text2");
-         let chisocannang = cannang / (chieucao * chieucao)
-         if (chisocannang < 18) {
-             txt1.innerHTML = `Chỉ số BMI là: ${chisocannang}. Bạn Gầy cấp độ 3. Ăn thật nhiều vào nhé.` + longvan;
-         }
-         if (chisocannang >= 18.5 && chisocannang >= 25.0) {
-             txt1.innerHTML = `Chỉ số BMI là: ${chisocannang}. Bạn Bình thường.` + longvan;
-         }
+    function init() {
+        longvan.style.display = "none";
 
-         if (chisocannang >= 25.0 && chisocannang <= 30.0) {
-             txt1.innerHTML = `Chỉ số BMI là: ${chisocannang}. Tiệm cận béo.`
-             if (chisocannang >= 30.0) {
-                 txt1.innerHTML = `Chỉ số BMI là: ${chisocannang}. Bạn thật béo.`
-             }
-         }}
-</script>
+    }
+
+    function kiemtra() {
+        let cannang = +document.getElementById("cannang").value;
+        let chieucao = +document.getElementById("chieucao").value;
+        let txt1 = document.getElementById("text1");
+        let txt2 = document.getElementById("text2");
+        let chisocannang = cannang / (chieucao * chieucao)
+
+
+        if (chisocannang < 18) {
+            longvan.style.display = "block"
+
+            txt1.innerHTML = `Chỉ số BMI là: ${chisocannang}. Bạn Gầy cấp độ 3. Ăn thật nhiều vào nhé.`;
+        }
+        if (chisocannang >= 18.5 && chisocannang <= 25.0) {
+
+            txt1.innerHTML = `Chỉ số BMI là: ${chisocannang}. Bạn Bình thường.`;
+        }
+
+        if (chisocannang > 25.0 && chisocannang <= 30.0) {
+            txt1.innerHTML = `Chỉ số BMI là: ${chisocannang}. Tiệm cận béo.`
+        }
+        if (chisocannang > 30.0) {
+            longvan.style.display = "block"
+            longvan.src ="734d11cc677595ce3c3e5e3bba02721f.gif"
+            txt1.innerHTML = `Chỉ số BMI là: ${chisocannang}. Bạn thật béo.`
+
+        }
+    }
+
+    window.onload = init;
+  </script>
 </body>
 </html>
