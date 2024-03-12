@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện loại 2 </title>
+    <style></style>
+</head>
+<body>
+<!--<div>-->
+<!--    <p> Điền Độ C vào đây. </p>-->
+<!--    <input id="khungdiendoC" type="text">-->
+<!--    <button id="nutbam" onclick="chuyendoi()"> Chuyển đối</button>-->
+<!--</div>-->
+<!--<script>-->
+<!--    function chuyendoi() {-->
+<!--        let C = +document.getElementById("khungdiendoC").value-->
+<!--        let F = C * 9/5 + 32-->
+<!--        document.write("Độ F là + " + F )-->
+<!--    }-->
+
+
+<!--</script>-->
+
+<!--Điền vào đây để chuyển từ mét sang feet <input ID="dienmet" type="text">-->
+<!--<button id="chuyendoimetsangfeet" onclick="chuyendoi()"> Chuyển đổi</button>-->
+<!--<script>-->
+<!--    function chuyendoi() {-->
+<!--        let dienmetvaoday = +document.getElementById("dienmet").value-->
+<!--        let feet = dienmetvaoday * 3.2808-->
+<!--        document.write("Feet là " + feet)-->
+<!--    }-->
+
+
+<!--</script>-->
+<!--     Điền cạnh a <input type="text" id="diencanha">-->
+<!--     <button type="button" id="tinhdientich" onclick="dientich()"> Tính diện tích </button>-->
+<!-- <br>-->
+<!--<br>-->
+<!--<div id="ketqua"></div>-->
+<!--<script>-->
+<!--    function dientich() {-->
+<!--        let diencanha = +document.getElementById("diencanha").value-->
+<!--        let dienTich = diencanha * diencanha-->
+<!--        // document.write("Diện tích hình vuông là " + dienTich)-->
+<!--        document.getElementById("ketqua").innerHTML = "Diện tích hình vuông là " + dienTich;-->
+
+
+<!--    }-->
+<!--</script>-->
+<!--Điền cạnh a <input id="a" type="text">-->
+<!--<br>-->
+<!--<br>-->
+
+<!--Điền cạnh b <input id="b" type="text">-->
+<!--<br>-->
+<!--<br>-->
+<!--<button id="dientichavab" onclick="chuyendoi()"> Tinh dien tich hinh chu nhat</button>-->
+<!--<div id="ketqua"> </div>-->
+<!--<script>-->
+<!--   function chuyendoi() {-->
+<!--       let chieudai = +document.getElementById("a").value-->
+<!--       let chieurong = +document.getElementById("b").value-->
+<!--       let dientich = chieudai * chieurong-->
+<!--       document.getElementById("ketqua").innerHTML = "Dien tich hinh chu nhat là " + dientich-->
+<!--   }-->
+<!--</script>-->
+
+
+<!--Điền a <input id="canhkea" type="text">-->
+<!--<br> <br>-->
+<!--Điền b <input id="canhkeb" type="text">-->
+<!--<div id="ketqua"></div>-->
+<!--<br> <br>-->
+<!--<button id="tinhtoan" onclick="chuyendoi()"> Tính dien tich tam giac vuong</button>-->
+<!--<script>-->
+<!--    // let btn = document.getElementById("tinhtoan");-->
+<!--    // btn.addEventListener("click", () => {-->
+<!--    //     let a = +document.getElementById("canhkea").value-->
+<!--    //     let b = +document.getElementById("canhkeb").value-->
+<!--    //     let dientich = 1 / 2 * a * b-->
+<!--    //     document.getElementById("ketqua").innerHTML = "Diện tích hình tam giác vuong la " + dientich;-->
+<!--    // })-->
+<!--    function chuyendoi() {-->
+<!--        let a = +document.getElementById("canhkea").value-->
+<!--        let b = +document.getElementById("canhkeb").value-->
+<!--        let dientich = 1/2 * a * b-->
+<!--        document.getElementById("ketqua").innerHTML = "Diện tích hình tam giác vuong la " + dientich;-->
+<!--    }-->
+
+<!--</script>-->
+
+
+<!--Nhập a <input id="nhapa" type="text">-->
+<!--<br> <br>-->
+<!--Nhap b <input id="nhapb" type="text">-->
+<!--<br> <br>-->
+
+<!--&lt;!&ndash;//-b/a&ndash;&gt;-->
+<!--<button id="chuyedoi" onclick="chuyendoi()"> Tinh phuong trinh bac hai</button>-->
+<!--<br>-->
+<!--<br>-->
+<!--<div id="ketqua"></div>-->
+<!--<script>-->
+<!--    function chuyendoi() {-->
+<!--        let a = +document.getElementById("nhapa").value-->
+<!--        let b = +document.getElementById("nhapb").value-->
+<!--        let ich = -b / a-->
+<!--        document.getElementById("ketqua").innerHTML = a +"x +" + b + "= 0" + "<br>" + "x =" + ich;-->
+
+<!--    }-->
+<!--</script>-->
+
+
+
+
+
+
+
+<!--Nhập a <input id="nhapa"  type="text" oninput="eror()">-->
+<!--<p style="color: red" id="baoloi"> </p>-->
+<!--<br> <br>-->
+<!--Nhap b <input id="nhapb" type="text">-->
+<!--<br> <br>-->
+<!--Nhap c <input id="nhapc" type="text">-->
+<!--<br><br>-->
+<!--<button type="button" id="chuyendoi" onclick="chuyendoi()"> Tìm phương trình bậc hai </button>-->
+<!--<div id="ketqua"></div>-->
+<!--<script>-->
+<!--    ;-->
+
+<!--    function chuyendoi()-->
+<!--    {-->
+<!--      let a = +document.getElementById("nhapa").value;-->
+<!--      let b = +document.getElementById("nhapb").value-->
+<!--      let c = +document.getElementById("nhapc").value-->
+<!--      let x = Math.sqrt()-->
+<!--      let delta = b * b - 4 * a * c-->
+<!--        if (a + b + c == 0) {-->
+<!--            document.getElementById("ketqua").innerHTML = "x1 = 1 và x2 =" + c/a;-->
+<!--        }-->
+
+<!--        if (a - b + c == 0) {-->
+<!--          document.getElementById("ketqua").innerHTML = "x1 = -1 và x2 =" + - c/a-->
+<!--        }-->
+
+<!--        if (delta < 0) {-->
+<!--          document.getElementById("ketqua").innerHTML = "Phương trình vô nghiệm"-->
+<!--        }-->
+<!--        if (delta = 0) {-->
+<!--          document.getElementById("ketqua").innerHTML = "Phương trình có nghiệm kép x1 = x2 =" + -b/(2* a)-->
+<!--        }-->
+
+<!--        if (delta >0) {-->
+<!--          document.getElementById("ketqua").innerHTML = "x1 =" + (-b + Math.sqrt (delta))/ (2 * a)-->
+<!--        }-->
+<!--        if (delta >0) {-->
+<!--            document.getElementById("ketqua").innerHTML = "x2 =" + (-b - Math.sqrt (delta))/ (2 * a)-->
+<!--        }-->
+
+
+<!--    }-->
+<!--    function eror() {-->
+<!--        if (+document.getElementById("nhapa").value == 0) {-->
+<!--            console.log(4)-->
+
+<!--            document.getElementById("baoloi").innerHTML = "Khong the dien so nay"-->
+<!--        }-->
+
+
+<!--    }-->
+<!--</script>-->
+
+<!--Nhập a <input id="nhapa" type="text">-->
+<!--Nhập b <input id="nhapb" type="text">-->
+<!--Nhập c <input id="nhapc" type="text">-->
+<!--<button id="check" onclick="kiemtra()"> Kiểm tra </button>-->
+<!--<div id="ketqua"></div>-->
+<!--<script>-->
+<!--    function kiemtra() {-->
+<!--        let a = +document.getElementById("nhapa").value-->
+<!--        let b = +document.getElementById("nhapb").value-->
+<!--        let c = +document.getElementById("nhapc").value;-->
+
+<!--         if (a > 0 && b > 0 && c > 0 && (a + b )> c && (b + c) > a && (a + c) > b) {-->
+<!--            document.getElementById("ketqua").innerHTML = "a,b,c là một cạnh củs một tam giác";-->
+<!--         } else {-->
+<!--            document.getElementById("ketqua").innerHTML = "a,b,c không phải là một cạnh củs một tam giác";-->
+<!--         }-->
+
+<!--    }-->
+
+
+<!--</script>-->
+
+<!--<div>-->
+<!--    <h1> DO YOU HATE ME? </h1>-->
+<!--        <button id="yes" onmouseover="yes()" style="position: absolute"> YES </button>-->
+<!--        <button style="margin: 0px 60px"> NO </button>-->
+<!--</div>-->
+<!--<script>-->
+<!--    function yes() {-->
+<!--        document.getElementById("yes").style.top = Math.random() * 100 + "px";-->
+<!--        document.getElementById("yes").style.left = Math.random() * 100 + "px";-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--</div>-->
+
+<!--<input type="number" min="1" max="12" id="nhapsongay" placeholder="Nhap thang">-->
+<!--<button id="tinhsongay" type="button" onclick="tinhsongay()">Tính số ngày</button>-->
+<!--<div id="result"></div>-->
+<!--<script>-->
+
+<!--    function tinhsongay() {-->
+<!--        let month = document.getElementById("nhapsongay").value;-->
+<!--        let a = true;-->
+<!--        alert(typeof month)-->
+
+<!--        switch(month) {-->
+<!--            case 1:-->
+<!--            case 3:-->
+<!--            case 5:-->
+<!--            case 7:-->
+<!--            case 8:-->
+<!--            case 10:-->
+<!--            case 12:-->
+<!--                document.getElementById("nhapsongay").innerHTML = "Tháng " + month + " có 31 ngày"-->
+<!--                break;-->
+
+<!--            case 4:-->
+<!--            case 6:-->
+<!--            case 8:-->
+<!--            case 11:-->
+<!--                document.getElementById("result").innerHTML = "Tháng " + month + " có 30 ngày"-->
+<!--                break;-->
+<!--            case 2:-->
+<!--                document.getElementById("result").innerHTML = "Tháng " + month + " có 28 hoặc 29 ngày"-->
+<!--                break;-->
+<!--            default:-->
+<!--                document.getElementById("result").innerHTML = "Vui lòng nhập lại tháng"-->
+
+<!--        }-->
+<!--        -->
+
+<!--    }-->
+<!--</script>-->
+
+
+
+</body>
+</html>
+
